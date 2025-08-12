@@ -1,0 +1,205 @@
+{
+  "users": [
+    {
+      "id": "68d0439b-d342-4c98-a363-d53701fa3d9f",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "$2b$10$o7QoYFATXDswUpc.7gvUIOJXP9VEn2gwUoHeF5mcSRMXUXwEebWNu",
+      "createdAt": "2025-08-09T11:15:00.000Z"
+    },
+    {
+      "id": "8787a444-5165-440b-a635-a334f2b7144e",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "$2b$10$o7QoYFATXDswUpc.7gvUIOJXP9VEn2gwUoHeF5mcSRMXUXwEebWNu",
+      "createdAt": "2025-08-09T11:15:00.000Z"
+    }
+  ],
+  "books": [
+    {
+      "id": "book-john-1",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Fiction",
+      "condition": "Very Good",
+      "description": "A classic American novel about the Jazz Age",
+      "status": "exchanged-available",
+      "ownerId": "8787a444-5165-440b-a635-a334f2b7144e",
+      "owner": {
+        "name": "Jane Smith",
+        "email": "jane@example.com"
+      },
+      "createdAt": "2025-08-09T11:15:00.000Z"
+    },
+    {
+      "id": "book-john-2",
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "genre": "Technology",
+      "condition": "Like New",
+      "description": "A handbook of agile software craftsmanship",
+      "status": "exchanged-available",
+      "ownerId": "68d0439b-d342-4c98-a363-d53701fa3d9f",
+      "owner": {
+        "name": "John Doe",
+        "email": "john@example.com"
+      },
+      "createdAt": "2025-08-09T11:15:00.000Z"
+    },
+    {
+      "id": "book-john-3",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "genre": "Fiction",
+      "condition": "Good",
+      "description": "A classic coming-of-age story",
+      "status": "available",
+      "ownerId": "68d0439b-d342-4c98-a363-d53701fa3d9f",
+      "owner": {
+        "name": "John Doe",
+        "email": "john@example.com"
+      },
+      "createdAt": "2025-08-09T11:15:00.000Z"
+    },
+    {
+      "id": "book-jane-1",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genre": "Fiction",
+      "condition": "Very Good",
+      "description": "A powerful story of racial injustice and childhood innocence",
+      "status": "exchanged-available",
+      "ownerId": "8787a444-5165-440b-a635-a334f2b7144e",
+      "owner": {
+        "name": "Jane Smith",
+        "email": "jane@example.com"
+      },
+      "createdAt": "2025-08-09T11:15:00.000Z"
+    },
+    {
+      "id": "book-jane-2",
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Fiction",
+      "condition": "Like New",
+      "description": "Dystopian social science fiction novel",
+      "status": "exchanged-available",
+      "ownerId": "8787a444-5165-440b-a635-a334f2b7144e",
+      "owner": {
+        "name": "Jane Smith",
+        "email": "jane@example.com"
+      },
+      "createdAt": "2025-08-09T11:15:00.000Z"
+    },
+    {
+      "id": "book-jane-3",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "Romance",
+      "condition": "Good",
+      "description": "Classic romance novel",
+      "status": "available",
+      "ownerId": "68d0439b-d342-4c98-a363-d53701fa3d9f",
+      "owner": {
+        "name": "John Doe",
+        "email": "john@example.com"
+      },
+      "createdAt": "2025-08-09T11:15:00.000Z",
+      "coverImageUrl": "https://marketplace.canva.com/EAGKkPbakT4/1/0/251w/canva-purple-sky-book-cover-_DoLgxCzP90.jpg",
+      "updatedAt": "2025-08-09T11:54:17.182Z"
+    }
+  ],
+  "exchanges": [
+    {
+      "id": "437baf0d-56e1-4f01-b0ad-beb05c0c7669",
+      "requesterId": "68d0439b-d342-4c98-a363-d53701fa3d9f",
+      "requesterName": "John Doe",
+      "ownerId": "8787a444-5165-440b-a635-a334f2b7144e",
+      "ownerName": "Jane Smith",
+      "requestedBookId": "book-jane-1",
+      "offeredBookId": "book-john-2",
+      "message": "I give my Clean Code for your 'To kill'",
+      "status": "accepted",
+      "createdAt": "2025-08-09T11:21:25.009Z",
+      "respondedAt": "2025-08-09T11:22:42.329Z"
+    },
+    {
+      "id": "17879bce-8b5a-4c83-8c2f-bee109c5455d",
+      "requesterId": "8787a444-5165-440b-a635-a334f2b7144e",
+      "requesterName": "Jane Smith",
+      "ownerId": "68d0439b-d342-4c98-a363-d53701fa3d9f",
+      "ownerName": "John Doe",
+      "requestedBookId": "book-john-3",
+      "offeredBookId": "book-jane-2",
+      "message": "",
+      "status": "accepted",
+      "createdAt": "2025-08-09T11:29:41.053Z",
+      "respondedAt": "2025-08-09T11:30:37.516Z"
+    },
+    {
+      "id": "965e3af5-f35b-4d55-acfe-05bfb9ce2a98",
+      "requesterId": "68d0439b-d342-4c98-a363-d53701fa3d9f",
+      "requesterName": "John Doe",
+      "ownerId": "8787a444-5165-440b-a635-a334f2b7144e",
+      "ownerName": "Jane Smith",
+      "requestedBookId": "book-jane-3",
+      "offeredBookId": "book-john-1",
+      "message": "pride for gatsby",
+      "status": "accepted",
+      "createdAt": "2025-08-09T11:36:03.128Z",
+      "respondedAt": "2025-08-09T11:44:31.608Z"
+    },
+    {
+      "id": "7aa5318a-3573-4e53-b90a-3cf3dd2422e5",
+      "requesterId": "8787a444-5165-440b-a635-a334f2b7144e",
+      "requesterName": "Jane Smith",
+      "ownerId": "68d0439b-d342-4c98-a363-d53701fa3d9f",
+      "ownerName": "John Doe",
+      "requestedBookId": "book-jane-3",
+      "offeredBookId": "book-john-2",
+      "message": "",
+      "status": "declined",
+      "createdAt": "2025-08-09T11:45:23.516Z",
+      "respondedAt": "2025-08-09T11:46:02.674Z"
+    },
+    {
+      "id": "e2accb6a-01b3-49a8-854a-75f456766f97",
+      "requesterId": "68d0439b-d342-4c98-a363-d53701fa3d9f",
+      "requesterName": "John Doe",
+      "ownerId": "8787a444-5165-440b-a635-a334f2b7144e",
+      "ownerName": "Jane Smith",
+      "requestedBookId": "book-john-3",
+      "offeredBookId": "book-jane-2",
+      "message": "",
+      "status": "accepted",
+      "createdAt": "2025-08-09T12:09:52.677Z",
+      "respondedAt": "2025-08-09T12:18:42.785Z"
+    },
+    {
+      "id": "269bc37a-4cef-4642-8176-b42544634aaa",
+      "requesterId": "8787a444-5165-440b-a635-a334f2b7144e",
+      "requesterName": "Jane Smith",
+      "ownerId": "68d0439b-d342-4c98-a363-d53701fa3d9f",
+      "ownerName": "John Doe",
+      "requestedBookId": "book-john-3",
+      "offeredBookId": "book-john-2",
+      "message": "",
+      "status": "declined",
+      "createdAt": "2025-08-09T12:20:26.053Z",
+      "respondedAt": "2025-08-09T12:25:24.792Z"
+    },
+    {
+      "id": "9c911675-3c99-43cc-9214-0e5f738accc7",
+      "requesterId": "68d0439b-d342-4c98-a363-d53701fa3d9f",
+      "requesterName": "John Doe",
+      "ownerId": "8787a444-5165-440b-a635-a334f2b7144e",
+      "ownerName": "Jane Smith",
+      "requestedBookId": "book-john-2",
+      "offeredBookId": "book-jane-1",
+      "message": "",
+      "status": "accepted",
+      "createdAt": "2025-08-09T12:34:29.189Z",
+      "respondedAt": "2025-08-09T12:34:44.051Z"
+    }
+  ]
+}
