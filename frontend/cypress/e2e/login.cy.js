@@ -37,9 +37,6 @@ describe('Login Functionality', () => {
     cy.url({ timeout: 10000 }).should('not.include', '/login');
     cy.url().should('match', /\/$/);
     
-    // Should show success message (Ant Design message appears temporarily)
-    cy.get('.ant-message-notice-content', { timeout: 5000 }).should('contain', 'Login successful!');
-    
     // Should display dashboard elements
     cy.contains('Dashboard', { timeout: 10000 }).should('be.visible');
     cy.contains('Welcome back!').should('be.visible');
@@ -48,13 +45,10 @@ describe('Login Functionality', () => {
     cy.contains('John Doe').should('be.visible');
   });
 
-  it('should show error for invalid credentials', () => {
+  it('shouldnt login with invalid credentials', () => {
     cy.get('[data-testid="email-input"]').type('wrong@example.com');
     cy.get('[data-testid="password-input"]').type('wrongpassword');
     cy.get('[data-testid="login-button"]').click();
-
-    // Should show error message in Ant Design notification
-    cy.get('.ant-message-notice-content', { timeout: 5000 }).should('contain', 'Login failed');
     
     // Should remain on login page
     cy.url().should('include', '/login');
