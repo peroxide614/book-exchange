@@ -7,14 +7,14 @@ This document outlines all the functionality that should be tested in the Book E
 | Category        | Total Cases | Covered | Not Covered | Coverage % |
 | --------------- | ----------- | ------- | ----------- | ---------- |
 | Authentication  | 8           | 7       | 1           | 87.5%      |
-| Add Book        | 10          | 8       | 2           | 80%        |
+| Add Book        | 10          | 9       | 1           | 90%        |
 | Browse Books    | 15          | 0       | 15          | 0%         |
 | Dashboard       | 8           | 0       | 8           | 0%         |
 | Exchanges       | 12          | 0       | 12          | 0%         |
 | Navigation      | 6           | 2       | 4           | 33%        |
 | Book Management | 8           | 0       | 8           | 0%         |
 | Header & UI     | 6           | 0       | 6           | 0%         |
-| **TOTAL**       | **73**      | **17**  | **56**      | **23%**    |
+| **TOTAL**       | **73**      | **18**  | **55**      | **25%**    |
 
 ---
 
@@ -43,7 +43,7 @@ This document outlines all the functionality that should be tested in the Book E
 | Optional Fields           | Should add book without optional description              | ✅ Covered     | Medium   | `add-book.cy.js` |
 | Genre Options             | Should display all genre options                          | ✅ Covered     | Medium   | `add-book.cy.js` |
 | Condition Options         | Should display all condition options (including disabled) | ✅ Covered     | Medium   | `add-book.cy.js` |
-| Form Reset                | Should clear form after successful submission             | ✅ Covered     | Medium   | `add-book.cy.js` |
+| Successful Submission     | Should submit form and redirect to dashboard              | ✅ Covered     | Medium   | `add-book.cy.js` |
 | Authentication Required   | Should require authentication to access                   | ✅ Covered     | High     | `add-book.cy.js` |
 | Cover Image URL           | Should handle valid/invalid cover image URLs              | ❌ Not Covered | Low      | -                |
 | Form Field Limits         | Should enforce character limits on fields                 | ❌ Not Covered | Medium   | -                |
@@ -197,7 +197,7 @@ This document outlines all the functionality that should be tested in the Book E
 ## 📊 Current Test Files Summary
 
 - **`login.cy.js`**: 7 comprehensive tests covering authentication flow
-- **`add-book.cy.js`**: 8 tests covering book creation functionality
+- **`add-book.cy.js`**: 9 tests covering book creation functionality
 - **Missing**: Tests for Browse Books, Dashboard, Exchanges, Registration, Book Management
 
 The current test coverage focuses on the basic user flows but misses the core exchange functionality that makes this app unique.
