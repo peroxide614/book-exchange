@@ -175,4 +175,16 @@ describe('Add Book Functionality', () => {
     });
   });
 
+  it('should display browse books page with filters', () => {
+    // Navigate to browse books page
+    cy.visit('/');
+    cy.contains('Browse Books').click();
+    cy.url().should('include', '/books');
+
+    // Verify page title and description
+    cy.contains('Browse Books').should('be.visible');
+    cy.contains('Find your next great read!').should('be.visible');
+
+  });
+
 });
