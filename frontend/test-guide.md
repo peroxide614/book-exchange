@@ -46,7 +46,7 @@ This document outlines all the functionality that should be tested in the Book E
 | Successful Submission     | Should submit form and redirect to dashboard              | ✅ Covered     | Medium   | `add-book.cy.js` |
 | Authentication Required   | Should require authentication to access                   | ✅ Covered     | High     | `add-book.cy.js` |
 | Cover Image URL           | Should handle valid/invalid cover image URLs              | ❌ Not Covered | Low      | -                |
-| Form Field Limits         | Should enforce character limits on fields                 | ❌ Not Covered | Medium   | -                |
+| Form Field Limits         | Should enforce character limits on fields                 | ✅ Covered     | Medium   | -add-book.cy.js  |
 
 ---
 
