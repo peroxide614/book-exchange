@@ -187,4 +187,17 @@ describe('Add Book Functionality', () => {
 
   });
 
+  it('should display statistics cards on dashboard', () => {
+    cy.visit('/');
+    
+    cy.contains('My Books').should('be.visible');
+    cy.contains('Available for Exchange').should('be.visible');
+    cy.contains('Total Exchanges').should('be.visible');
+    
+    cy.get('.ant-statistic-content-value').should('have.length', 3);
+    cy.get('.ant-statistic-content-value').each(($el) => {
+      cy.wrap($el).invoke('text').should('match', /^\d+$/);
+    });
+  });
+
 });
