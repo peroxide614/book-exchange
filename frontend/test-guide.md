@@ -77,7 +77,7 @@ This document outlines all the functionality that should be tested in the Book E
 | Test Case               | Description                                                   | Status         | Priority | Test File |
 | ----------------------- | ------------------------------------------------------------- | -------------- | -------- | --------- |
 | Page Display            | Should display dashboard with welcome message                 | ❌ Not Covered | High     | -         |
-| Statistics Cards        | Should show My Books, Available for Exchange, Total Exchanges | ❌ Not Covered | High     | -         |
+| Statistics Cards        | Should show My Books, Available for Exchange, Total Exchanges | Covered        | High     | -         |
 | My Books Section        | Should display user's books (max 3)                           | ❌ Not Covered | High     | -         |
 | Book Status Display     | Should show correct status for each book                      | ❌ Not Covered | Medium   | -         |
 | Recent Books Section    | Should display recently added books by others                 | ❌ Not Covered | Medium   | -         |
@@ -152,7 +152,7 @@ This document outlines all the functionality that should be tested in the Book E
 
 | Test Case             | Description                                                 | Status         | Priority | Test File |
 | --------------------- | ----------------------------------------------------------- | -------------- | -------- | --------- |
-| End-to-End Exchange   | Complete exchange flow from request to acceptance           | ❌ Not Covered | High     | -         |
+| End-to-End Exchange   | Complete exchange flow from request to acceptance           | Covered        | High     | -         |
 | Multi-User Scenarios  | Test with multiple users and overlapping requests           | ❌ Not Covered | High     | -         |
 | Book Status Lifecycle | Test complete book status transitions                       | ❌ Not Covered | High     | -         |
 | Notification System   | Test real-time updates across browser tabs                  | ❌ Not Covered | Medium   | -         |
