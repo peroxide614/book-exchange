@@ -21,10 +21,10 @@ describe('Exchange Workflow Integration', () => {
     cy.get('[data-testid="book-description-input"]').type('Testing book status changes');
     cy.get('[data-testid="add-book-button"]').click();
     
-    cy.url({ timeout: 10000 }).should('include', '/');
+    cy.url({ timeout: 10000 }).should('include', '/'); // todo: copilot -> intended verify redirect to dashboard
     cy.contains('Dashboard').should('be.visible');
     
-    cy.wait(1000);
+    cy.wait(1000); // todo: unnecessary wait
     
     cy.contains('Browse Books').click();
     cy.url().should('include', '/books');
@@ -60,7 +60,7 @@ describe('Exchange Workflow Integration', () => {
       const count = parseInt(cleanText) || 0;
       expect(count).to.be.at.least(0); // Changed to 0 since count might not update immediately
     });
-  });
+  }); // todo: strange verification
 
   it('should update book count when status changes', () => {
     cy.visit('/');
@@ -69,10 +69,10 @@ describe('Exchange Workflow Integration', () => {
     cy.get('.ant-statistic-content-value').first().invoke('text').then((initialCount) => {
       const count = parseInt(initialCount);
       
-      cy.visit('/add-book');
+      cy.visit('/add-book'); // todo: reccurent set of tests
       cy.get('[data-testid="book-title-input"]').type('New Status Book');
       cy.get('[data-testid="book-author-input"]').type('Count Author');
-      
+  
       cy.get('[data-testid="book-genre-select"]').click();
       cy.wait(200);
       cy.get('.ant-select-item').contains('Fiction').click();
